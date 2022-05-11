@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- LINKS -->
+    
+    <link rel="stylesheet" href="css/nba.css">
+    <link rel="stylesheet" href="css/principal.css">
+
+    <!-- LOGO -->
+    <link rel="icon" href="logo/favicon-32x32.png">
+    
+
+    <title>Info NBA</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="index.html" class="nav__logo">DUNK</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                   <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                   <li class="nav__item"><a href="index.html#shop" class="nav__link">Shop</a></li>
+                   <li class="nav__item"><a href="index.html#featured" class="nav__link">Featured</a></li>
+                   <li class="nav__item"><a href="index.html#new" class="nav__link">New</a></li>
+                   <li class="nav__item"><a href="index.html#suscribed" class="nav__link">Contact us</a></li>
+               </ul>
+            </div>
+
+            <div>
+                 <i class='bx bx-menu nav__toggle' id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BUSCADOR -->
+
+    <section class="featured section" id="featured">
+        <h2 class="section-title">BUSCA A TU JUGADOR FAVORITO</h2>
+       
+        <section class="newsletter section" id="suscribed">
+            <div class="newsletter__container bd-grid">
+                <div class="newsletter__suscribe">
+                    
+
+                    <form action="" class="newsletter__form">
+                        <input type="text" class="newsletter__input" pattern="[0-9]*" placeholder="Ingresa un ID" id="id" required>
+                        <a href="#" class="button" onclick="buscarPlayer()">BUSCAR</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="bd-grid">
+                    
+                    <div class="wrapper">
+                      <div class="card ">
+                        <div class="card__image card__image--nba">
+                          <img src="https://th.bing.com/th/id/R.a59293ce0fde19e2b09f8ff3efa8e1ab?rik=2jzIvrxcuU5%2bvA&riu=htt
+                          p%3a%2f%2fwww.stickpng.com%2fassets%2fimages%2f58428defa6515b1e0ad75ab4.png&ehk=ltCnKNoDPGV0hObY3nJXCn9p9jufY
+                          XqgDwfZ6LbttCU%3d&risl=&pid=ImgRaw&r=0" alt="giant" />
+                        </div>
+                        <div class="card__liga card__liga--nba">NBA</div>
+                        <div class="card__unit-name" id="name"></div>
+                        <div class="card__unit-ape" id="ape"></div>
+                        <div class="card__unit-team" id="team"></div>
+                        <div class="card__unit-team" id="confe"></div>
+                  
+                        <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                          <div class="one-third">
+                            <div class="stat" id="pos"></div>
+                            <div class="stat-value">Position</div>
+                          </div>
+                  
+                          <div class="one-third">
+                            <div class="stat" id="altura"></div>
+                            <div class="stat-value">Height</div>
+                          </div>
+                  
+                          <div class="one-third no-border">
+                            <div class="stat" id="peso"></div>
+                            <div class="stat-value">Weight</div>
+                          </div>
+                  
+                        </div>
+                  
+                      </div> <!-- end clash-card giant-->
+                    </div> <!-- end wrapper -->
+                  
+                    </div> <!-- end wrapper -->
+                    
+                
+                
+        </div>
+     </section>
+
+
+     <script src="js/nba.js"></script>
+
+</body>
+</html>
